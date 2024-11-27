@@ -34,8 +34,8 @@ D. Run `gitleaks --version` to make sure Gitleaks installed correctly.
 ### 3. Pre-commits scripts
 
 A. Upload the shared files and folder inside `.husky` folder and then run the following commands to make sure the pre-commits directory and the scripts inside it are executable:
-   chmod +x .git/hooks/pre-commits/*
-   chmod +x .git/hooks/pre-commit
+   - chmod +x .husky/pre-commits/*
+   - chmod +x .husky/pre-commit
 
 ## How To Test
 A. Gitleaks
