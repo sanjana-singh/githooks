@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# Directory containing individual pre-commit scripts
+HOOKS_DIR="$(dirname "$0")/pre-commits"
+
+# Function to check project type
+check_project_type() {
+  if [ -f "database.sanitize.yml" ] && [ -d "modules" ]; then
+    PROJECT_TYPE="drupal"
+    echo "Drupal project detected."
+  elif [ -d "site" ] && [ -f "edison.yml" ]; then
+    PROJECT_TYPE="hugo"
+    echo "Hugo project detected."
+  elif [ -f "Project.toml" ] && [ -d "src" ]; then
+    PROJECT_TYPE="franklin"
+    echo "Franklin project detected."
+  else
+    PROJECT_TYPE="unknown"
+    echo "Unknown project type."
+  fi
+}
+
+# Check project type
+check_project_type
+
+# Define arrays for each project type
+DRUPAL_HOOKS=("phpcs" "gitleaks")
+HUGO_HOOKS=("eslint" "gitleaks")
+FRANKLIN_HOOKS=("eslint" "gitleaks")
+
+# Run the appropriate scripts based on the project type
+case "$PROJECT_TYPE" in
+  drupal)
+    HOOKS=("${DRUPAL_HOOKS[@]}")
+    ;;
+  hugo)
+    HOOKS=("${HUGO_HOOKS[@]}")
+    ;;
+  franklin)
+    HOOKS=("${FRANKLIN_HOOKS[@]}")
+    ;;
+  *)
+    echo "No specific commands to run for this project type."
+    exit 0
+    ;;
+esac
+
+# Run each script in the selected hooks array
+for HOOK in "${HOOKS[@]}"; do
+  SCRIPT="$HOOKS_DIR/$HOOK"
+  if [ -x "$SCRIPT" ]; then
+    "$SCRIPT"
+    if [ $? -ne 0 ]; then
+      echo "Pre-commit hook $SCRIPT failed."
+      exit 1
+    fi
+  else
+    echo "Hook script $SCRIPT is not executable or not found."
+    exit 1
+  fi
+done
+
+exit 0

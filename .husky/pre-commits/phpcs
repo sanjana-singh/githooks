@@ -1,0 +1,42 @@
+#!/bin/sh
+
+STANDARD="PSR12"
+EXTENSIONS="php,module,theme,inc,install,test,profile,js"
+TARGET_DIR="."
+
+# Path to PHP_CodeSniffer
+BIN="../../../vendor/bin"
+
+# Check if PHP_CodeSniffer is installed
+if [ ! -f "$BIN/phpcs" ]; then
+  echo "Drupal Coder not found. Please install it using 'composer require drupal/coder'"
+  exit 1
+fi
+
+# Get the list of staged PHP files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACMR)
+
+# Check if there are any staged PHP files
+if [ -z "$STAGED_FILES" ]; then
+  echo "No staged PHP files to check."
+  exit 0
+fi
+
+# Run PHP_CodeSniffer on each staged file
+echo "Running Drupal Coder on staged files..."
+for FILE in $STAGED_FILES; do
+  case "$FILE" in
+  *.php|*.module|*.theme|*.inc|*.install|*.test|*.profile|*.js)
+    "$BIN/phpcs" --standard=$STANDARD --extensions=$EXTENSIONS --ignore=*/*.css "$FILE"
+    if [ $? != 0 ]; then
+    echo "Please fix each violation detected in $FILE before committing."
+    echo
+    exit 1
+    fi
+    ;;
+  esac
+done
+
+
+echo "No violations detected by Drupal Coder."
+exit 0

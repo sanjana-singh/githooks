@@ -1,0 +1,72 @@
+#!/bin/sh
+
+# Configuration
+GITLEAKS_VERSION="v8.21.2"
+REPORT_FILE="gitleaks-report.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+CONFIG_FILE="$SCRIPT_DIR/gitleaks.toml"
+
+# Function to display an error message and exit
+exit_with_error() {
+    echo "$1"
+    exit 1
+}
+
+# Check if the current directory is a Git repository
+if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    exit_with_error "Not a git repository (or any of the parent directories)."
+fi
+
+# Determine the operating system
+OS_TYPE="unknown"
+if [ "$(uname)" = "Darwin" ]; then
+    OS_TYPE="macos"
+elif [ "$OS" = "Windows_NT" ]; then
+    OS_TYPE="windows"
+fi
+
+echo $OS_TYPE
+
+# Check if Gitleaks is installed, if not, install it
+if ! command -v gitleaks &> /dev/null; then
+    if [ "$OS_TYPE" = "macos" ]; then
+        if ! command -v brew &> /dev/null; then
+            echo "Homebrew not found, installing Homebrew..."
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || exit_with_error "Failed to install Homebrew."
+        fi
+        echo "Gitleaks not found, installing using Homebrew..."
+        brew install gitleaks || exit_with_error "Failed to install Gitleaks using Homebrew."
+    elif [ "$OS_TYPE" = "windows" ]; then
+        exit_with_error "Gitleaks not found. Please install Gitleaks manually."
+    else
+        exit_with_error "Gitleaks not found. Please install Gitleaks manually."
+    fi
+fi
+
+# Get the list of staged files, excluding gitleaks-report.json
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v "$REPORT_FILE")
+
+# Check if there are any staged files
+if [ -z "$STAGED_FILES" ]; then
+    echo "No staged files to scan."
+    exit 0
+fi
+
+# Run Gitleaks on each staged file
+SECRETS_FOUND=0
+for FILE in $STAGED_FILES; do
+    echo "Running Gitleaks for secret scanning on $FILE..."
+    gitleaks directory "$FILE" --config=${CONFIG_FILE} -v --report-path=${REPORT_FILE}
+    if [ $? -ne 0 ]; then
+        echo "Gitleaks detected secrets in $FILE or encountered an error. Please fix the issues before committing."
+        SECRETS_FOUND=1
+    fi
+done
+
+# Exit with an error if any secrets were found
+if [ $SECRETS_FOUND -ne 0 ]; then
+    exit 1
+fi
+
+echo "Gitleaks found no secrets. Proceeding with commit."
+exit 0
