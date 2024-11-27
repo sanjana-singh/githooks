@@ -34,17 +34,16 @@ D. Run `gitleaks --version` to make sure Gitleaks installed correctly.
 ### 3. Pre-commits scripts
 
 A. Upload the shared files and folder inside `.husky` folder and then run the following commands to make sure the pre-commits directory and the scripts inside it are executable:
-   ```sh
    chmod +x .git/hooks/pre-commits/*
    chmod +x .git/hooks/pre-commit
 
 ## How To Test
-Gitleaks
+A. Gitleaks
 I. Add a secret key (e.g., $client_secret<vscode_annotation details='%5B%7B%22title%22%3A%22hardcoded-credentials%22%2C%22description%22%3A%22Embedding%20credentials%20in%20source%20code%20risks%20unauthorized%20access%22%7D%5D'> =</vscode_annotation> 'AIzaSyD88A45fYZnb2dLBTD-MqEU9BZLvjE8AQQ';) in any file.
 II. Commit the changes.
 III. You will see notifications in GitBash indicating the detection of the secret.
 
-PHPCS
+B. PHPCS
 I. Add extra spaces in any .php file.
 II. Commit the changes.
 III. You will see notifications in GitBash highlighting the coding standard violations.
