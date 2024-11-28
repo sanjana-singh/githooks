@@ -21,7 +21,7 @@ All the below commands need to be run under the profile folder (e.g., `pfecpfart
 ### 1. Install Husky
 
 A. If `package.json` file is not present in the repo, then run `npm init -y` to create it.  
-B. If `package.json` exists and it is empty run `npm install --save-dev husky`.  
+B. If `package.json` exists and it is empty or husky not present as a package run `npm install --save-dev husky`.  
 C. Run `npx husky init && npm install`: It creates `.pre-commit` file under `.husky` folder.  
 
 ### 2. Gitleaks Setup
