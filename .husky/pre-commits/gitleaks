@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Allows us to read user input below, assigns stdin to keyboard
+exec < /dev/tty
+
 # Configuration
 GITLEAKS_VERSION="v8.21.2"
 REPORT_FILE="gitleaks-report.json"
@@ -11,6 +14,11 @@ exit_with_error() {
     echo "$1"
     exit 1
 }
+
+# Check if the script is running in an interactive shell
+if [ ! -t 0 ]; then
+    exit_with_error "This script must be run in an interactive shell."
+fi
 
 # Check if the current directory is a Git repository
 if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
@@ -43,29 +51,48 @@ if ! command -v gitleaks &> /dev/null; then
     fi
 fi
 
-# Get the list of staged files, excluding gitleaks-report.json
-STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v "$REPORT_FILE")
+# Prompt user for input
+echo "Do you want to run a full scan? (y/n): "
+read -r SCAN_CHOICE
 
-# Check if there are any staged files
-if [ -z "$STAGED_FILES" ]; then
-    echo "No staged files to scan."
-    exit 0
+# Determine scan scope based on user input
+if [ "$SCAN_CHOICE" = "y" ]; then
+    SCAN_SCOPE="full"
+else
+    SCAN_SCOPE="staged"
 fi
 
-# Run Gitleaks on each staged file
-SECRETS_FOUND=0
-for FILE in $STAGED_FILES; do
-    echo "Running Gitleaks for secret scanning on $FILE..."
-    gitleaks directory "$FILE" --config=${CONFIG_FILE} -v --report-path=${REPORT_FILE}
+if [ "$SCAN_SCOPE" = "full" ]; then
+    echo "Running Gitleaks for secret scanning on the entire project..."
+    gitleaks directory --config="${CONFIG_FILE}" -v --report-path="${REPORT_FILE}"
     if [ $? -ne 0 ]; then
-        echo "Gitleaks detected secrets in $FILE or encountered an error. Please fix the issues before committing."
-        SECRETS_FOUND=1
+        exit_with_error "Gitleaks detected secrets or encountered an error. Please fix the issues before committing."
     fi
-done
+else
+    # Get the list of staged files, excluding gitleaks-report.json
+    STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v "$REPORT_FILE")
 
-# Exit with an error if any secrets were found
-if [ $SECRETS_FOUND -ne 0 ]; then
-    exit 1
+    # Check if there are any staged files
+    if [ -z "$STAGED_FILES" ]; then
+        echo "No staged files to scan."
+        exit 0
+    fi
+
+    # Run Gitleaks on each staged file
+    SECRETS_FOUND=0
+    for FILE in $STAGED_FILES; do
+        echo "Running Gitleaks for secret scanning on $FILE..."
+        gitleaks directory "$FILE" --config="${CONFIG_FILE}" -v --report-path="${REPORT_FILE}"
+        if [ $? -ne 0 ]; then
+            echo "Gitleaks detected secrets in $FILE or encountered an error. Please fix the issues before committing."
+            SECRETS_FOUND=1
+        fi
+    done
+
+    # Exit with an error if any secrets were found
+    if [ $SECRETS_FOUND -ne 0 ]; then
+        exit 1
+    fi
 fi
 
 echo "Gitleaks found no secrets. Proceeding with commit."

@@ -1,7 +1,7 @@
 #!/bin/sh
 
-STANDARD="PSR12"
-EXTENSIONS="php,module,theme,inc,install,test,profile,js"
+STANDARD="DrupalPractice"
+EXTENSIONS="php,module,inc,install,test,profile,theme,info,txt,md,yml"
 TARGET_DIR="."
 
 # Path to PHP_CodeSniffer
