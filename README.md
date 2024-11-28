@@ -20,9 +20,9 @@ All the below commands need to be run under the profile folder (e.g., `pfecpfart
 
 ### 1. Install Husky
 
-A. Run `npm install --save-dev husky`  
-B. If `package.json` file is not present in the repo, then run `npm init -y` to create it.  
-C. Run `npx husky init`: It creates `.pre-commit` file under `.husky` folder.
+A. If `package.json` file is not present in the repo, then run `npm init -y` to create it.
+B. If `package.json` exists and it is empty run `npm install --save-dev husky`.
+C. Run `npx husky init && npm install`: It creates `.pre-commit` file under `.husky` folder.
 
 ### 2. Gitleaks Setup
 
@@ -30,10 +30,11 @@ A. We can see all the releases on [Releases · gitleaks/gitleaks](https://github
 B. Download a specific version file based on your system (e.g., `gitleaks_8.21.2_windows_x64.zip`) and place it under any specific folder in your local.  
 C. Set an environment variable for the path to the downloaded `.exe` file.  
 D. Run `gitleaks --version` to make sure Gitleaks installed correctly.
+E. For MAC use `brew install gitleaks`.
 
 ### 3. Pre-commits scripts
 
-A. Upload the shared files and folder inside `.husky` folder and then run the following commands to make sure the pre-commits directory and the scripts inside it are executable:
+A. Copy the folder `pre-commits` and file `pre-commit` inside `.husky` folder and then run the following commands to make sure the pre-commits directory and the scripts inside it are executable:
    - chmod +x .husky/pre-commits/*
    - chmod +x .husky/pre-commit
 
