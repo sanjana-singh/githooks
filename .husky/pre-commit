@@ -11,7 +11,7 @@ check_project_type() {
   elif [ -d "site" ] && [ -f "edison.yml" ]; then
     PROJECT_TYPE="hugo"
     echo "Hugo project detected."
-  elif [ -f "Project.toml" ] && [ -d "src" ]; then
+  elif [ -f "fstab.yaml" ] && [ -d "blocks" ]; then
     PROJECT_TYPE="franklin"
     echo "Franklin project detected."
   else
