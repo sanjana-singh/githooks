@@ -40,6 +40,9 @@ if which npm > /dev/null; then
 
     ohai 'Initializing npm'
     npm init -y
+    
+    ohai 'Installing eslint'
+    npm install eslint --save-dev && npx eslint --init
 
     ohai 'Installing husky'
     npm install --save-dev husky
