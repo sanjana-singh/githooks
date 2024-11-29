@@ -42,10 +42,10 @@ if which npm > /dev/null; then
     npm init -y
     
     ohai 'Installing eslint'
-    npm install eslint --save-dev && npx eslint --init
+    npm install eslint@latest --save-dev && npx eslint --init
 
     ohai 'Installing husky'
-    npm install --save-dev husky
+    npm install husky@latest --save-dev
 
     ohai 'Initializing husky'
     npx husky init && npm install
@@ -64,7 +64,7 @@ if which npm > /dev/null; then
     ohai 'Checking if stylelint is installed'
     if ! npm list stylelint > /dev/null 2>&1; then
         ohai 'Installing stylelint'
-        npm install stylelint stylelint-config-standard --save-dev
+        npm install stylelint@latest stylelint-config-standard@latest --save-dev
     else
         ohai 'stylelint is already installed'
     fi
@@ -76,7 +76,6 @@ if which npm > /dev/null; then
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    // Add your custom rules here
   }
 }
 EOL
