@@ -60,6 +60,38 @@ if which npm > /dev/null; then
     ohai 'Changing permissions'
     chmod +x .husky/pre-commits/*
     chmod +x .husky/pre-commits
+
+    ohai 'Checking if stylelint is installed'
+    if ! npm list stylelint > /dev/null 2>&1; then
+        ohai 'Installing stylelint'
+        npm install stylelint stylelint-config-standard --save-dev
+    else
+        ohai 'stylelint is already installed'
+    fi
+
+    ohai 'Checking if .stylelintrc.json exists'
+    if [ ! -f .stylelintrc.json ]; then
+        ohai 'Creating .stylelintrc.json'
+        cat <<EOL > .stylelintrc.json
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    // Add your custom rules here
+  }
+}
+EOL
+    else
+        ohai '.stylelintrc.json already exists'
+    fi
+
+    ohai 'Checking if package.json contains lint:css script'
+    if ! grep -q '"lint:css":' package.json; then
+        ohai 'Updating package.json to include lint:css script'
+        npx json -I -f package.json -e 'this.scripts["lint:css"]="stylelint **/*.css"'
+    else
+        ohai 'lint:css script already exists in package.json'
+    fi
+
 else
     echo "NPM is not installed. Please install npm and try again."
 fi
