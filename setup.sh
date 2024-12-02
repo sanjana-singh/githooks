@@ -57,6 +57,21 @@ if which npm > /dev/null; then
     ohai 'Changing permissions'
     chmod +x .husky/pre-commits/*
     chmod +x .husky/pre-commits
+
+    ohai 'Updating .gitignore'
+    if [ ! -f .gitignore ]; then
+        touch .gitignore
+    fi
+    if ! grep -q '^node_modules/$' .gitignore; then
+        echo 'node_modules/' >> .gitignore
+    fi
+    if ! grep -q '^package-lock.json$' .gitignore; then
+        echo 'package-lock.json' >> .gitignore
+    fi
+    if ! grep -q '^gitleaks-report.json$' .gitignore; then
+        echo 'gitleaks-report.json' >> .gitignore
+    fi
+
 else
     echo "NPM is not installed. Please install npm and try again."
 fi
