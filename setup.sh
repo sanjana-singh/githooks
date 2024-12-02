@@ -39,7 +39,7 @@ if which npm > /dev/null; then
     npm -v
 
     ohai 'Initializing npm'
-    npm init -y
+    npm init -y > NUL 2>&1
 
     ohai 'Installing husky'
     npm install --save-dev husky
