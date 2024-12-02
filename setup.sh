@@ -48,11 +48,11 @@ if which npm > /dev/null; then
     npx husky init && npm install
 
     ohai 'Copying pre-commit hooks'
-    git clone https://github.com/sanjana-singh/Githooks_poc.git
+    git clone https://github.com/sanjana-singh/githooks.git
 
     ohai 'Copying pre-commit hooks'
-    cp -r Githooks_poc/.husky .
-    rm -rf Githooks_poc
+    cp -r githooks/.husky .
+    rm -rf githooks
 
     ohai 'Changing permissions'
     chmod +x .husky/pre-commits/*
