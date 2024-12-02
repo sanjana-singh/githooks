@@ -40,12 +40,9 @@ if which npm > /dev/null; then
 
     ohai 'Initializing npm'
     npm init -y
-    
-    ohai 'Installing eslint'
-    npm install eslint@latest --save-dev && npx eslint --init
 
     ohai 'Installing husky'
-    npm install husky@latest --save-dev
+    npm install --save-dev husky
 
     ohai 'Initializing husky'
     npx husky init && npm install
@@ -60,37 +57,6 @@ if which npm > /dev/null; then
     ohai 'Changing permissions'
     chmod +x .husky/pre-commits/*
     chmod +x .husky/pre-commits
-
-    ohai 'Checking if stylelint is installed'
-    if ! npm list stylelint > /dev/null 2>&1; then
-        ohai 'Installing stylelint'
-        npm install stylelint@latest stylelint-config-standard@latest --save-dev
-    else
-        ohai 'stylelint is already installed'
-    fi
-
-    ohai 'Checking if .stylelintrc.json exists'
-    if [ ! -f .stylelintrc.json ]; then
-        ohai 'Creating .stylelintrc.json'
-        cat <<EOL > .stylelintrc.json
-{
-  "extends": "stylelint-config-standard",
-  "rules": {
-  }
-}
-EOL
-    else
-        ohai '.stylelintrc.json already exists'
-    fi
-
-    ohai 'Checking if package.json contains lint:css script'
-    if ! grep -q '"lint:css":' package.json; then
-        ohai 'Updating package.json to include lint:css script'
-        npx json -I -f package.json -e 'this.scripts["lint:css"]="stylelint **/*.css"'
-    else
-        ohai 'lint:css script already exists in package.json'
-    fi
-
 else
     echo "NPM is not installed. Please install npm and try again."
 fi
