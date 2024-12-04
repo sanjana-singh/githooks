@@ -23,7 +23,7 @@ Ensure you have a local setup of a Drupal project.
 ### 2. Gitleaks Setup (this step is required for Windows only)
 
 A. We can see all the releases on [Releases · gitleaks/gitleaks](https://github.com/gitleaks/gitleaks/releases)  
-B. Download a specific version file based on your system (e.g., `[gitleaks_8.21.2_windows_x64.zip](https://github.com/gitleaks/gitleaks/releases/download/v8.21.2/gitleaks_8.21.2_windows_x64.zip)`) and place it under any specific folder in your local.  
+B. Download a specific version file based on your system (e.g., [gitleaks_8.21.2_windows_x64.zip](https://github.com/gitleaks/gitleaks/releases/download/v8.21.2/gitleaks_8.21.2_windows_x64.zip)) and place it under any specific folder in your local.  
 C. Set an environment variable for the path to the downloaded `.exe` file.  
 D. Run `gitleaks --version` to make sure Gitleaks installed correctly.  
 
