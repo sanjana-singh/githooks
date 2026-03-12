@@ -1,26 +1,15 @@
-+:------------------------------------------x-------------------------------------------:+
-| **Corporate Primary Menu (white)**                                                     |
-+--------x---------+----------------------------------x----------------------------------+
-| brand            | ![Pfizer](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg) |
-+--------x---------+----------------------------------x----------------------------------+
-|                  | - [About Us](https://www.pfizer.co.za/about)                        |
-|                  | - [News](https://www.pfizer.co.za/news)                             |
-| nav              | - [Careers](https://www.pfizer.co.za/careers)                       |
-|                  | - [Contact](https://www.pfizer.co.za/contact)                       |
-|                  | - [Pfizer Global](https://www.pfizer.com/)                          |
-+--------x---------+----------------------------------x----------------------------------+
-| contact-us       | [Contact Us](https://www.pfizer.co.za/contact)                      |
-+------------------+---------------------------------------------------------------------+
+| **Corporate Primary Menu (white)** | |
+|---|---|
+| brand | ![Pfizer](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg) |
+| nav | - [About Us](https://www.pfizer.co.za/about) - [News](https://www.pfizer.co.za/news) - [Careers](https://www.pfizer.co.za/careers) - [Contact](https://www.pfizer.co.za/contact) - [Pfizer Global](https://www.pfizer.com/) |
+| contact-us | [Contact Us](https://www.pfizer.co.za/contact) |
 
 ---
 
-+:------------------------------x------------------------------:+
-| **Corporate Hero (dark)**                                     |
-+------x------+------------------------x------------------------+
-| image       | ![](https://www.pfizer.co.za/images/05a86639e81951b3b72a0c6b00102a06.png) |
-+------x------+------------------------x------------------------+
-| heading     | # **Breakthroughs That Change Patients' Lives** |
-+-------------+-------------------------------------------------+
+| **Corporate Hero (dark)** | |
+|---|---|
+| image | ![](https://www.pfizer.co.za/images/05a86639e81951b3b72a0c6b00102a06.png) |
+| heading | # **Breakthroughs That Change Patients' Lives** |
 
 ---
 
@@ -45,44 +34,16 @@ Living our values of courage, excellence, equity and joy, we are a diverse team 
 
 ---
 
-+:------------------------------------------x------------------------------------------:+
-| **Corporate Feature**                                                                 |
-+-----x-----+-------------------------------------x-------------------------------------+
-| image     | ![Careers](https://www.pfizer.co.za/images/custom/CommunitiesM.jpg)           |
-+-----x-----+-------------------------------------x-------------------------------------+
-|           | Join the pfizer team                                                          |
-|           |                                                                               |
-|           | #### **Careers**                                                              |
-|           |                                                                               |
-| body      | Step inside the world of Pfizer and you'll discover that every single         |
-|           | person who works here plays an essential part in making breakthroughs          |
-|           | that change patients' lives.                                                  |
-|           |                                                                               |
-|           | [Learn More](/careers)                                                        |
-+-----------+---------------------------------------------------------------------------+
+| **Corporate Feature** | |
+|---|---|
+| image | ![Careers](https://www.pfizer.co.za/images/custom/CommunitiesM.jpg) |
+| body | Join the pfizer team #### **Careers** Step inside the world of Pfizer and you'll discover that every single person who works here plays an essential part in making breakthroughs that change patients' lives. [Learn More](/careers) |
 
 ---
 
-+:-------------------------------------------x-------------------------------------------:+
-| **Corporate Footer (copyright-long)**                                                   |
-+---------x---------+----------------------------------x----------------------------------+
-| logo              | ![Pfizer logo](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg) |
-+---------x---------+----------------------------------x----------------------------------+
-|                   | - [Home](https://www.pfizer.co.za/)                                 |
-|                   | - [About Us](https://www.pfizer.co.za/about)                        |
-|                   | - [News](https://www.pfizer.co.za/news)                             |
-| nav               | - [Careers](https://www.pfizer.co.za/careers)                       |
-|                   | - [Contact](https://www.pfizer.co.za/contact)                       |
-|                   | - [Pfizer Global](https://www.pfizer.com/)                          |
-+---------x---------+----------------------------------x----------------------------------+
-|                   | - [Terms of use](https://www.pfizer.co.za/terms)                    |
-|                   | - [Privacy Policy](https://www.pfizer.co.za/privacy)                |
-| nav               | - [Disclaimer](https://www.pfizer.co.za/disclaimer)                 |
-|                   | - [PAIA](https://www.pfizer.co.za/files/Pfizer-PAIA-Manual.pdf)     |
-+---------x---------+----------------------------------x----------------------------------+
-|                   | Pfizer Laboratories (Pty) Ltd. Company Reg. No. 1954/000781/07.     |
-|                   | Building 2, 1st Floor, Maxwell Office Park, Magwa Crescent,         |
-| copyright         | Waterfall City, Midrand, Johannesburg, South Africa. Tel. No: 0860  |
-|                   | PFIZER (734937). Copyright © 2025. Pfizer Laboratories (Pty) Ltd.   |
-|                   | All rights reserved                                                 |
-+-------------------+---------------------------------------------------------------------+
+| **Corporate Footer (copyright-long)** | |
+|---|---|
+| logo | ![Pfizer logo](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg) |
+| nav | - [Home](https://www.pfizer.co.za/) - [About Us](https://www.pfizer.co.za/about) - [News](https://www.pfizer.co.za/news) - [Careers](https://www.pfizer.co.za/careers) - [Contact](https://www.pfizer.co.za/contact) - [Pfizer Global](https://www.pfizer.com/) |
+| nav | - [Terms of use](https://www.pfizer.co.za/terms) - [Privacy Policy](https://www.pfizer.co.za/privacy) - [Disclaimer](https://www.pfizer.co.za/disclaimer) - [PAIA](https://www.pfizer.co.za/files/Pfizer-PAIA-Manual.pdf) |
+| copyright | Pfizer Laboratories (Pty) Ltd. Company Reg. No. 1954/000781/07. Building 2, 1st Floor, Maxwell Office Park, Magwa Crescent, Waterfall City, Midrand, Johannesburg, South Africa. Tel. No: 0860 PFIZER (734937). Copyright © 2025. Pfizer Laboratories (Pty) Ltd. All rights reserved |
