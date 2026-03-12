@@ -1,72 +1,38 @@
-Corporate Hero (dark)	
-image	
-image-tablet	
-image-mobile	
-heading	# Breakthroughs That Change Patients' Lives
-We strive to set the standard for quality, safety and value in the discovery, development and manufacture of health care products.
-Learn More About Us
-Our Latest Breakthroughs
-Explore the innovations driving tomorrow's treatments.
+| Corporate Primary Menu (white) | |
+|---|---|
+| brand | [![Pfizer: One of the world's premier biopharmaceutical companies](https://www.pfizer.co.za/pfizer-logo.svg)](/) |
+| nav | <ul><li><a href="https://www.pfizer.co.za/about">About Us</a></li><li><a href="https://www.pfizer.co.za/news">News</a></li><li><a href="https://www.pfizer.co.za/careers">Careers</a></li><li><a href="https://www.pfizer.co.za/contact">Contact</a></li><li><a href="https://www.pfizer.com/">Pfizer Global</a></li></ul> |
+| contact-us | [Contact Us](https://www.pfizer.co.za/contact) |
 
-Corporate Carousel (col-4, show-nav, default)	
-Vaccine Manufacturing	##### Making & Distributing Our Vaccine
-We've implemented an unprecedented preparedness plan to control our site operations.
+---
 
-Default Link | | Oncology Research | ##### Advancing Cancer Research
+| Corporate Hero (dark) | |
+|---|---|
+| image | <!-- hero background image not extractable from HTML — set via CSS/shadow DOM. Author: please insert the correct hero background image manually. Recommended size: 1440×600 px. --> |
+| heading | # Breakthroughs That Change Patients' Lives |
 
-Our oncology pipeline targets multiple pathways with novel mechanisms across multiple tumor types.
+---
 
-Learn More | | Gene Therapy | ##### Gene Therapy Innovation
+| Corporate Feature | |
+|---|---|
+| image | ![Pfizer South Africa](https://www.pfizer.co.za/images/custom/AboutM.jpg) |
+| body | ##### Pfizer South Africa<br><br>At Pfizer, we apply science and our global resources to bring therapies to people that extend and significantly improve their lives. We strive to set the standard for quality, safety and value in the discovery, development and manufacture of health care products, including innovative medicines and vaccines. Every day, Pfizer colleagues work across developed and emerging markets to advance wellness, prevention, treatments and cures that challenge the most feared diseases of our time. Consistent with our responsibility as one of the world's premier innovative companies, we collaborate with health care providers, governments and local communities to support and expand access to reliable, affordable health care around the world. For more than 150 years, we have worked to make a difference for all who rely on us.<br><br>From our sub-Saharan Africa headquarters located in Johannesburg, South Africa, for more than 70 years, Pfizer has been delivering life-changing breakthroughs to the people of South Africa. Guided by our three pillars of innovation, investing and safeguarding, we work with Healthcare Practitioners, Policy Makers, Patient Groups and other members of civil society to serve the communities in which we live and work, broadening access to medicines and strengthening healthcare delivery for the people who need it most.<br><br>Living our values of courage, excellence, equity and joy, we are a diverse team of about 250 people working daily to provide all South Africans with access to global scientific innovation that can help them to live longer, better lives. Through our commitment to the national agenda, we are contributing to the development of a strong healthcare system, as well as growth of the knowledge economy in the interest of those who need to be empowered today and to the benefit of the generations to come.<br><br>[Join the Pfizer team](https://www.pfizer.co.za/careers){.button.primary} |
 
-Pfizer is advancing gene therapies for rare diseases that were previously unaddressable.
+---
 
-Explore Research | | Internal Medicine | ##### Internal Medicine Breakthroughs
+| Corporate Card | |
+|---|---|
+| image | ![Careers](https://www.pfizer.co.za/images/custom/CommunitiesM.jpg) |
+| header | ##### Careers |
+| | Step inside the world of Pfizer and you'll discover that every single person who works here plays an essential part in making breakthroughs that change patients' lives. |
+| | [Learn More](https://www.pfizer.co.za/careers){.button.primary} |
+| link | https://www.pfizer.co.za/careers |
 
-From cardiovascular to metabolic disease, our pipeline spans many indications.
+---
 
-View Pipeline | | Immunology | ##### Inflammation & Immunology
-
-We are committed to transforming the treatment of immune-mediated diseases.
-
-Read More | | Rare Diseases | ##### Rare Disease Programs
-
-Developing treatments for patients with rare and often life-threatening diseases.
-
-Discover More |
-
-Corporate Feature (light)	
-image	Chasing a Cure
-body	Science
-Chasing a Cure for NASH
-You already know that overloading on sweets can lead to diabetes, but it's also driving a silent epidemic: NASH — a severe form of fatty liver disease.
-
-Learn More |
-
-Corporate Feature (image-right, default)	
-image	RxPathways
-body	##### Pfizer RxPathways connects eligible patients to assistance programs that offer insurance support, co-pay help, and medicines at a discount.
-Learn More |
-
-Frequently Asked Questions
-Corporate Accordion (default)	
-##### What is Pfizer doing to combat COVID-19?	Pfizer has taken a multi-pronged approach to fighting COVID-19 through vaccine development, treatment options, and global partnerships.
-Learn More | | ##### How can I report an adverse event? | You can report adverse events related to Pfizer products through our pharmacovigilance portal or by contacting your healthcare provider.
-
-Report Here | | ##### Where can I find information about clinical trials? | Visit our clinical trials page to search for active studies and learn about participation.
-
-Find Trials |
-
-Get In Touch
-Corporate Tabs (vertical, link, default)	
-FAQ	##### Frequently Asked Questions
-Here you'll find answers to the most frequently asked questions.
-
-Find Answers | | Adverse Events | Report any suspected adverse events related to Pfizer products through the appropriate pharmacovigilance channels. | | Media Relations | For media inquiries please contact the Pfizer communications team.
-
-Media Contact |
-
-Metadata	
-Title	Pfizer | Breakthroughs That Change Patients' Lives
-Description	At Pfizer, we apply science and our global resources to bring therapies to people that extend and significantly improve their lives.
-Image	Pfizer
-Robots	index, follow
+| Corporate Footer (copyright-long) | |
+|---|---|
+| logo | [![Pfizer logo](https://www.pfizer.co.za/pfizer-logo.svg)](/) |
+| nav | <ul><li><a href="https://www.pfizer.co.za/">Home</a></li><li><a href="https://www.pfizer.co.za/about">About Us</a></li><li><a href="https://www.pfizer.co.za/news">News</a></li><li><a href="https://www.pfizer.co.za/careers">Careers</a></li><li><a href="https://www.pfizer.co.za/contact">Contact</a></li><li><a href="https://www.pfizer.com/">Pfizer Global</a></li></ul> |
+| nav | <ul><li><a href="https://www.pfizer.co.za/terms">Terms of use</a></li><li><a href="https://www.pfizer.co.za/privacy">Privacy Policy</a></li><li><a href="https://www.pfizer.co.za/disclaimer">Disclaimer</a></li><li><a href="https://www.pfizer.co.za/files/Pfizer-PAIA-Manual.pdf">PAIA</a></li></ul> |
+| copyright | Pfizer Laboratories (Pty) Ltd. Company Reg. No. 1954/000781/07. Building 2, 1st Floor, Maxwell Office Park, Magwa Crescent, Waterfall City, Midrand, Johannesburg, South Africa. Tel. No: 0860 PFIZER (734937). Copyright © 2025. Pfizer Laboratories (Pty) Ltd. All rights reserved |
