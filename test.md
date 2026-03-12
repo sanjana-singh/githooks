@@ -1,6 +1,6 @@
 | Corporate Primary Menu (white) | |
 |---|---|
-| brand | [![Pfizer: One of the world's premier biopharmaceutical companies](https://www.pfizer.co.za/pfizer-logo.svg)](/) |
+| brand | [![Pfizer: One of the world's premier biopharmaceutical companies](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg)](/) |
 | nav | <ul><li><a href="https://www.pfizer.co.za/about">About Us</a></li><li><a href="https://www.pfizer.co.za/news">News</a></li><li><a href="https://www.pfizer.co.za/careers">Careers</a></li><li><a href="https://www.pfizer.co.za/contact">Contact</a></li><li><a href="https://www.pfizer.com/">Pfizer Global</a></li></ul> |
 | contact-us | [Contact Us](https://www.pfizer.co.za/contact) |
 
@@ -8,7 +8,7 @@
 
 | Corporate Hero (dark) | |
 |---|---|
-| image | <!-- hero background image not extractable from HTML — set via CSS/shadow DOM. Author: please insert the correct hero background image manually. Recommended size: 1440×600 px. --> |
+| image | ![Breakthroughs That Change Patients' Lives](https://www.pfizer.co.za/images/05a86639e81951b3b72a0c6b00102a06.png) |
 | heading | # Breakthroughs That Change Patients' Lives |
 
 ---
@@ -32,7 +32,7 @@
 
 | Corporate Footer (copyright-long) | |
 |---|---|
-| logo | [![Pfizer logo](https://www.pfizer.co.za/pfizer-logo.svg)](/) |
+| logo | [![Pfizer logo](https://www.pfizer.co.za/images/9b08862f235a19554d3ac1adba05f4e7.svg)](/) |
 | nav | <ul><li><a href="https://www.pfizer.co.za/">Home</a></li><li><a href="https://www.pfizer.co.za/about">About Us</a></li><li><a href="https://www.pfizer.co.za/news">News</a></li><li><a href="https://www.pfizer.co.za/careers">Careers</a></li><li><a href="https://www.pfizer.co.za/contact">Contact</a></li><li><a href="https://www.pfizer.com/">Pfizer Global</a></li></ul> |
 | nav | <ul><li><a href="https://www.pfizer.co.za/terms">Terms of use</a></li><li><a href="https://www.pfizer.co.za/privacy">Privacy Policy</a></li><li><a href="https://www.pfizer.co.za/disclaimer">Disclaimer</a></li><li><a href="https://www.pfizer.co.za/files/Pfizer-PAIA-Manual.pdf">PAIA</a></li></ul> |
 | copyright | Pfizer Laboratories (Pty) Ltd. Company Reg. No. 1954/000781/07. Building 2, 1st Floor, Maxwell Office Park, Magwa Crescent, Waterfall City, Midrand, Johannesburg, South Africa. Tel. No: 0860 PFIZER (734937). Copyright © 2025. Pfizer Laboratories (Pty) Ltd. All rights reserved |
