@@ -1,39 +1,23 @@
-## corporate-accordion
+## Corporate Accordion Block
 
-| Step | Description |
-|-------|-------------|
-| Step 1: Search | At Pfizer, we have positions open now with a quick and easy application process. You can start by searching within a specific job category, job title, or location.  You can also join our Talent Community to be the first to know about new opportunities relevant to your job search at Pfizer. |
-| Step 2: Apply | After searching for a job that you may be interested in, click apply to begin the process. When filling out your application make sure you review the qualifications, provide all necessary log-in criteria, and complete your full application. If you are selected to move forward in the process, a Pfizer representative will contact you. Don’t see an opening that is right for you? We encourage you to submit your resume – our Recruiters will keep you in mind for future roles.  When you apply you will have an option to selection communication preference: please select opt in as opting out may prevent you from receiving interview invites. You can expect to receive updates as your application progresses through the process. |
-| Step 3: Review | The recruiter responsible for filling the role you applied for will review your application. In some cases, you may be asked to participate in a telephone screen. If you are selected to move forward, a Pfizer recruiter will reach out to you. This step can take a couple of weeks depending on the role, location, and number of candidates. |
-| Step 4: Assessments | Some positions will require you to complete an assessment before interviewing. Your Recruiter will work with you if that is the case. Please complete the assessment to move forward in the application process. |
+| Row Label | Content Description |
+| --------- | ------------------- |
+| panel     | Each panel contains a heading (Heading 5 style) and one or more paragraphs describing the step or content. Multiple paragraphs are allowed.
 
----
+### Example Content
 
-<div class="corporate-accordion block" data-theme="Default" data-behavior="allow-multiple">
-  <div class="row">
-    <div class="cell header">Step 1: Search</div>
-    <div class="cell content">
-      <p>At Pfizer, we have positions open now with a quick and easy application process. You can start by searching within a specific job category, job title, or location.</p>
-      <p>You can also join our Talent Community to be the first to know about new opportunities relevant to your job search at Pfizer.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="cell header">Step 2: Apply</div>
-    <div class="cell content">
-      <p>After searching for a job that you may be interested in, click apply to begin the process. When filling out your application make sure you review the qualifications, provide all necessary log-in criteria, and complete your full application. If you are selected to move forward in the process, a Pfizer representative will contact you. Don’t see an opening that is right for you? We encourage you to submit your resume – our Recruiters will keep you in mind for future roles.</p>
-      <p>When you apply you will have an option to selection communication preference: please select opt in as opting out may prevent you from receiving interview invites. You can expect to receive updates as your application progresses through the process.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="cell header">Step 3: Review</div>
-    <div class="cell content">
-      <p>The recruiter responsible for filling the role you applied for will review your application. In some cases, you may be asked to participate in a telephone screen. If you are selected to move forward, a Pfizer recruiter will reach out to you. This step can take a couple of weeks depending on the role, location, and number of candidates.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="cell header">Step 4: Assessments</div>
-    <div class="cell content">
-      <p>Some positions will require you to complete an assessment before interviewing. Your Recruiter will work with you if that is the case. Please complete the assessment to move forward in the application process.</p>
-    </div>
-  </div>
-</div>
+**Step 1: Search**
+At Pfizer, we have positions open now with a quick and easy application process. You can start by searching within a specific job category, job title, or location.
+
+You can also join our Talent Community to be the first to know about new opportunities relevant to your job search at Pfizer.
+
+**Step 2: Apply**
+After searching for a job that you may be interested in, click apply to begin the process. When filling out your application make sure you review the qualifications, provide all necessary log-in criteria, and complete your full application. If you are selected to move forward in the process, a Pfizer representative will contact you. Don’t see an opening that is right for you? We encourage you to submit your resume – our Recruiters will keep you in mind for future roles.
+
+When you apply you will have an option to selection communication preference: please select opt in as opting out may prevent you from receiving interview invites. You can expect to receive updates as your application progresses through the process.
+
+**Step 3: Review**
+The recruiter responsible for filling the role you applied for will review your application. In some cases, you may be asked to participate in a telephone screen. If you are selected to move forward, a Pfizer recruiter will reach out to you. This step can take a couple of weeks depending on the role, location, and number of candidates.
+
+**Step 4: Assessments**
+Some positions will require you to complete an assessment before interviewing. Your Recruiter will work with you if that is the case. Please complete the assessment to move forward in the application process.
