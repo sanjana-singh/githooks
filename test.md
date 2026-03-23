@@ -1,4 +1,5 @@
-| button |  |
+| partner-grid |  |
 | --- | --- |
-| Play Video | [Play Video in English (Opens in a new window)](https://bcove.video/4acWNFF) |
-| Talent Community | [Join Our Talent Community](https://pfizer.recsolu.com/app/collect/form/i31sduux-ebUNsBcQoUBLg) |
+| Pfizer | Pfizer is a global pharmaceutical leader, partnering with us since 2018. |
+| Johnson & Johnson | Johnson & Johnson brings innovation in healthcare and has collaborated on multiple projects. |
+| Novartis | Novartis is committed to improving lives and has been a strategic partner since 2020. |
