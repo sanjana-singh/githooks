@@ -25,10 +25,17 @@
 | Success Story | ![Story 1](/images/story1.jpg) See how our solutions helped millions. [Read Story](/stories/story1) |
 | Upcoming Event | ![Event 1](/images/event1.jpg) Join our webinar on innovation. [Register](/events/webinar) |
 
-| carousel-item |  |
+| tabs |  |
 | --- | --- |
-| Featured Article | ![Article thumbnail](/images/article-thumb.jpg)<br>Discover the latest advances in healthcare innovation at Pfizer.<br>[Read more](/articles/latest) |
-| Employee Spotlight | ![Employee portrait](/images/employee.jpg)<br>Meet Jane Doe, leading our research team.<br>[Learn more](/people/jane-doe) |
+| Courage | ![Courage Logo](/images/51fd22ce98f591a0c1073e95ecbbe1b3.png) Breakthroughs start by challenging convention, especially in the face of uncertainty or adversity. This happens when we think big, speak up, and are decisive. |
+| Excellence | ![Excellence Logo](/images/e3e095e33fdc8f9886c83e2e34e46a98.png) We can only change patients’ lives when we perform at our best together. This happens when we focus on what matters, agree who does what, and measure our outcomes. |
+| Equity | ![Equity Logo](/images/acba7d5407241249ef47e52d90b1d955.png) We believe that every person deserves to be seen, heard, and cared for. This happens when we are inclusive, act with integrity, and reduce healthcare disparities. |
+
+| carousel |  |
+| --- | --- |
+| Featured Research | Discover our latest breakthroughs in oncology. |
+| Patient Stories | Hear from patients whose lives have been changed. |
+| Our Commitment | Pfizer's dedication to global health initiatives. |
 
 | hero |  |
 | --- | --- |
